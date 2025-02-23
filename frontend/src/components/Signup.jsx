@@ -20,7 +20,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4001/api/v1/user/signup",
+        `${BACKEND_URL}/user/signup`,
         {
           firstName,
           lastName,
